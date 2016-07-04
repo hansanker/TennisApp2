@@ -1,0 +1,14 @@
+<h2>Groep</h2>
+
+<div *ngIf="group">
+  <h3>"{{group.name}}"</h3>
+  <div>
+    <label>Id: </label>{{group.id}}</div>
+  <div>
+    <label>Name: </label>
+    <input [(ngModel)]="group.name" placeholder="name" />
+  </div>
+  <p>
+    <button (click)="gotoGroups()">Back</button>
+  </p>
+</div>

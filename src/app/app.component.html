@@ -1,3 +1,9 @@
 <h1>
   {{title}}
 </h1>
+  <nav>
+    <a [routerLink]="['/today']">Vandaag</a>
+    <a [routerLink]="['/groups']">Groepen</a>
+  </nav>
+  
+<router-outlet></router-outlet>

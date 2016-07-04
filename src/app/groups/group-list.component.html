@@ -1,0 +1,7 @@
+  <h2>HEROES</h2>
+  <ul class="items">
+    <li *ngFor="let group of groups"
+      (click)="onSelect(group)">
+      <span class="badge">{{group.id}}</span> {{group.name}}
+    </li>
+  </ul>
