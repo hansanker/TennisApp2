@@ -1,7 +1,6 @@
-<h2>Groep</h2>
 
 <div *ngIf="group">
-  <h3>"{{group.name}}"</h3>
+  <h5>"{{group.name}}"</h5>
   <div>
     <label>Id: </label>{{group.id}}</div>
   <div>
@@ -9,18 +8,7 @@
     <input [(ngModel)]="group.name" placeholder="name" />
   </div>
   <p>
-    <button (click)="gotoGroups()">Back</button>
+    <a class="waves-effect waves-light btn" (click)="gotoGroups()">Terug naar groepen</a>
   </p>
 </div>
 
-<button md-button>FLAT</button>
-<button md-raised-button>RAISED</button>
-<button md-icon-button>
-   <md-icon class="md-24">favorite</md-icon>
-</button>
-<button md-fab>
-   <md-icon class="md-24">add</md-icon>
-</button>
-<button md-mini-fab>
-   <md-icon class="md-24">add</md-icon>
-</button>

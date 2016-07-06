@@ -1,7 +1,16 @@
-  <h2>HEROES</h2>
-  <ul class="items">
-    <li *ngFor="let group of groups"
-      (click)="onSelect(group)">
-      <span class="badge">{{group.id}}</span> {{group.name}}
-    </li>
-  </ul>
+<table class="highlight">
+  <thead>
+    <tr>
+      <th data-field="id">Groep ID</th>
+      <th data-field="name">Groep naam</th>
+
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let group of groups" (click)="onSelect(group)">
+      <td>{{group.id}}</td>
+      <td>{{group.name}}</td>
+    </tr>
+  </tbody>
+</table>
