@@ -1,8 +1,6 @@
-
 <div *ngIf="group">
-  <h5>"{{group.name}}"</h5>
-  <div>
-    <label>Id: </label>{{group.id}}</div>
+  <h5>{{group.name}}</h5>
+  <h6>Op {{group.day}} om </h6>
   <div>
     <label>Name: </label>
     <input [(ngModel)]="group.name" placeholder="name" />
@@ -11,4 +9,3 @@
     <a class="waves-effect waves-light btn" (click)="gotoGroups()">Terug naar groepen</a>
   </p>
 </div>
-
