@@ -1,12 +1,28 @@
-<h1>
-  {{title}}
-</h1>
-  <nav>
-    <a [routerLink]="['/today']">Vandaag</a>
-    <a [routerLink]="['/groups']">Groepen</a>
-    <a [routerLink]="['/lessons']">Lessen</a>
-    <a [routerLink]="['/students']">Leerlingen</a>
-    <a [routerLink]="['/setting']">Instellingen</a>
-  </nav>
+<nav class="green lighten-1" role="navigation">
+
+  <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo right">{{title}}</a>
+    <ul class="left hide-on-med-and-down">
+      <li><a [routerLink]="['/today']">Vandaag</a></li>
+      <li><a [routerLink]="['/groups']">Groepen</a> </li>
+      <li><a [routerLink]="['/lessons']">Lessen</a> </li>
+      <li><a [routerLink]="['/students']">Leerlingen</a> </li>
+      <li><a [routerLink]="['/setting']">Instellingen</a> </li>
+    </ul>
+
+    <ul id="nav-mobile" class="side-nav">
+      <li><a [routerLink]="['/today']">Vandaag</a></li>
+      <li><a [routerLink]="['/groups']">Groepen</a> </li>
+      <li><a [routerLink]="['/lessons']">Lessen</a> </li>
+      <li><a [routerLink]="['/students']">Leerlingen</a> </li>
+      <li><a [routerLink]="['/setting']">Instellingen</a> </li>
+    </ul>
+    <a data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+  </div>
+</nav>
+
+
+
   
-<router-outlet></router-outlet>
+
+
+<div class="container"><router-outlet></router-outlet></div>

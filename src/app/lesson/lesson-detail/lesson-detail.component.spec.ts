@@ -12,9 +12,9 @@ import {
 
 import { LessonDetailComponent } from './lesson-detail.component';
 
-describe('Component: LessonDetail', () => {
-  it('should create an instance', () => {
-    let component = new LessonDetailComponent();
-    expect(component).toBeTruthy();
-  });
-});
+// describe('Component: LessonDetail', () => {
+//   it('should create an instance', () => {
+//     let component = new LessonDetailComponent();
+//     expect(component).toBeTruthy();
+//   });
+// });

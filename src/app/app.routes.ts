@@ -9,7 +9,8 @@ import { StudentRoutes } from  './student/student.routes';
 export const routes: RouterConfig = [
   ...GroupRoutes, ...LessonRoutes, ...StudentRoutes,
   { path: 'today', component: TodayComponent },
-  { path: 'setting', component: SettingComponent }
+  { path: 'setting', component: SettingComponent },
+  { path: '',  redirectTo: 'today'}
 
   // { path: 'hero/:id', component: HeroDetailComponent }
 ];

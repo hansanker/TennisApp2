@@ -7,11 +7,44 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  '@angular2-material': 'vendor/@angular2-material',
+  "materialize": "vendor/materialize-css",
+  "angular2-materialize": "vendor/angular2-materialize",
+  "jquery": "vendor/jquery"
+  // 'angularfire2': 'vendor/angularfire2',
+  // 'firebase': 'vendor/firebase'
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'angularfire2': { main: 'angularfire2.js' },
+  'materialize': {
+    "format": "global",
+    "main": "dist/js/materialize",
+    "defaultExtension": "js"
+  },
+  'angular2-materialize': {
+    "main": "dist/index",
+    "defaultExtension": "js"
+  }
+  // 'firebase': {main: 'lib/firebase-web.js'}
 };
+
+
+const materialPkgs: string[] = [
+  'core',
+  'toolbar',
+  'icon',
+  'button',
+  'sidenav',
+  'list',
+  'card',
+  'input',
+];
+
+materialPkgs.forEach((pkg) => {
+  packages[`@angular2-material/${pkg}`] = { main: `${pkg}.js` };
+});
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************
