@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 
-import { Router, ActivatedRoute }              from '@angular/router';
-import { Group, GroupService }   from './group.service';
+import { Router, ActivatedRoute } from '@angular/router';
+import { Group, GroupService }  from '../group.service';
 
 @Component({
   moduleId: module.id,

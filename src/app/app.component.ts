@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
-import { GroupService }   from './groups/group.service';
+import { GroupService }   from './group/group.service';
 
 
 @Component({

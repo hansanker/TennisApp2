@@ -38,6 +38,14 @@ const barrels: string[] = [
   'app/groups',
   'app/group-detail',
   'app/group-list',
+  'app/lesson',
+  'app/lesson/lesson-list',
+  'app/lesson/lesson-detail',
+  'app/group/group-detail',
+  'app/group/group-list',
+  'app/student',
+  'app/student/student-list',
+  'app/student/student-detail',
   /** @cli-barrel */
 ];
 

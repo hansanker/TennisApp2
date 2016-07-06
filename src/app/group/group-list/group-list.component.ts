@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router }              from '@angular/router';
-import { Group, GroupService }   from './group.service';
+import { Group, GroupService }   from '../group.service';
 
 @Component({
   moduleId: module.id,

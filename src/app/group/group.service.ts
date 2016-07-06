@@ -5,7 +5,7 @@ export class Group {
 }
 
 let GROUPS = [
-    new Group(11, 'Mr. Nice'),
+    new Group(11, 'DO-12-MR'),
     new Group(12, 'Narco'),
     new Group(13, 'Bombasto'),
     new Group(14, 'Celeritas'),
