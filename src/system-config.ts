@@ -46,6 +46,7 @@ const barrels: string[] = [
   'app/student',
   'app/student/student-list',
   'app/student/student-detail',
+  'app/setting',
   /** @cli-barrel */
 ];
 

@@ -1,3 +1,7 @@
-<p>
-  lesson-list works!
-</p>
+  <h2>Lessen</h2>
+  <ul class="items">
+    <li *ngFor="let lesson of lessons"
+      (click)="onSelect(lesson)">
+      <span class="badge">{{lesson.id}}</span> {{lesson.name}}
+    </li>
+  </ul>

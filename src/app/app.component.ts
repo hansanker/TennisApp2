@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
 import { GroupService }   from './group/group.service';
+import { LessonService }   from './lesson/lesson.service';
 
 
 @Component({
@@ -9,7 +10,7 @@ import { GroupService }   from './group/group.service';
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
   directives: [ROUTER_DIRECTIVES],
-  providers: [GroupService]
+  providers: [GroupService, LessonService]
 })
 
 export class AppComponent {
